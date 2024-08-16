@@ -137,6 +137,9 @@ useEffect(() => {
             fullWidth
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            onKeyPress={handleKeyPress}
+            disabled={isLoading}
+
           />
           <Button variant="contained" onClick={sendMessage}>
             Send
